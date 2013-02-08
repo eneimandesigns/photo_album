@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<h2>Details</h2>
+<p>
+  <b>Photo Id:</b>
+  <%= @photo.title.to_s.sub(/^---\s\S\s/,'') %>
+</p>
+<p>
+  <b>Album:</b>
+  <%= @photo.path %>
+</p>
+<table class="entries">
+<tr><td>
+<%= @output.html_safe %>
+</td></tr>
+</table>
+<p>
+  <b>Description:</b>
+  <%= @photo.content %>
+</p>
+<p>
+  <b>Created at:</b>
+  <%= utc_time = Time.parse(@photo.created_at.to_s).utc; utc_time.localtime; date = DateTime.parse(utc_time.localtime.to_s); date.strftime('%a %b %d %H:%M:%S') %>
+</p>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Index', photos_path %> |
+<%= link_to 'Album', show_album_path(:id =>@photo.album_id) %>

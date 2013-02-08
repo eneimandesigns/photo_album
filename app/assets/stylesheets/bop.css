@@ -1,0 +1,243 @@
+/* e neiman designs default style for bop */
+/*	font: 75% Lucida Grande, Trebuchet MS */
+/*	font: 75% georgia, sans-serif; */
+
+
+    body {
+    margin: 0 auto;
+    width: 1100px;
+    font: 90% Lucida Grande, Comic Sans MS;
+    background:url(http://www.wisebison.com/images/linear-gradient1.svg);
+    }
+
+    section { display: block; }
+
+    section#articles { width: 900px; float: left; padding: 10px;  }
+
+    article > header { text-decoration: underline; margin-bottom: 10px; }
+
+    aside { float: left; width: 100px; padding: 10px; }
+
+    footer { overflow: hidden; clear: both; text-align: center; padding: 20px; }
+
+    nav li { float: left; width: 100px; text-align:center; padding: 10px; color: lightslategray; }
+
+    nav ul { list-style: none; overflow: hidden; padding: 0; margin: 0; background-color: powderblue; }
+
+    a.coldlink { color: dimgray; }
+     a { color: dimgray; }
+
+    a.hotlink { color: gray;font-weight:bold }
+
+    li.margin {margin-left:10px;}
+
+    footer {font: 75% Lucida Grande, Trebuchet MS;}
+    p {
+	margin-top: 0;
+	text-align: justify;
+	}
+    p.login {font: 110%  Lucida Grande, Comic Sans MS;color:#CCC;background-color:#333}
+    span.blue {color:dodgerblue;font-weight:bold}
+    span.red {color:red;font-weight:bold}
+    span.black {color:black;font-weight:bold}
+    span.white {color:white;}
+    span.gray {color:#333399;font-smooth:auto;}
+    fieldset {
+    	    width: 700px;
+	    display: block;
+	    margin-start: 2px;
+	    margin-end: 2px;
+	    padding-before: 0.35em;
+	    padding-start: 0.75em;
+	    padding-end: 0.75em;
+	    padding-after: 0.625em;
+	    border: 2px groove (internal value); }
+.container {
+  display: table;
+}
+
+.row {
+  display: table-row;
+}
+
+.cell {
+  display: table-cell;
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+  padding: 1em;
+}
+img {
+    border:solid 1px #f3f3f3;
+}
+.icons
+{
+height:12%;
+width:10%;
+}
+img.icons {
+    height:82px;
+    width:62px;
+    border:solid 2px #444;
+    text-align:center;
+    margin-right:2em;
+    margin-top: 2em;
+    float:left;
+}
+div#image-container {
+    width:450px;
+    margin:2em auto;
+    text-align:center;
+}
+div#thumbnails img {
+    max-height: 120px;
+  min-width: 120px;
+  margin:1em;
+      background-color: #A11F12;
+  text-align:center;
+}
+
+div.ecards-contacts {width:740px;float:left;color:#CCC;background-color:#333};
+label.ecards-label {width:100px;float:left}
+label.review {width:200px;color:black;font: Trebuchet;background-color: #ffffee;padding: 1px;margin-end: 10px;}
+input.ecards-input {width:200px;float:left}
+input.ecards-login {width:200px;}
+textarea.ecards-textarea {width:300px;float:left;}
+#selected-image {clear:both; padding-left: 10px;}
+#next-previous {clear:both;margin-bottom: 2em;}
+#contact_l {width: 120px;text_align:right;}
+#contact_v {width: 500px;}
+#next-previous a {
+    text-decoration:none;
+    font-family:serif;
+    font-size:1.5em;
+    font-weight:bold;
+    color:black;
+}
+#prev  {width:200px;float:left;}
+#next  {width:200px;float:right;}
+#container {
+    width:800px;
+}
+table {
+	display: inline-block;
+	text-align: left;
+	padding: 1ex;
+	margin-left: auto;
+	margin-right: auto;
+	border: thin solid #c0c0c0;
+}
+.entries td {
+   font-size: 12px;
+   padding: 2px;
+   margin:0;
+   border: 0px solid #c0c0c0;
+}
+td.oblique {
+   font-size: 12px;
+   padding-bottom: 12px;
+   font-style:oblique;
+   border: 0px solid #c0c0c0;
+}
+td.emphasis  {
+   padding: 2px;
+   margin:0;
+   border: 0px solid #c0c0c0;
+   font-size: 20px;
+   font-weight:bold;
+}
+.entries table {
+   border: solid 3px gray;
+}
+#preview-container a {
+    color:#33e;
+}
+#preview-container img {
+    opacity: 0.7;
+    box-shadow:0 1px 2px #888;
+    border-radius:5px;
+}
+#preview-container {
+    border:solid 12px #666359;
+    padding:1em;
+    overflow:auto;
+    background-image: url(/~dputnam/images/paper_ecard.jpg);
+    font-size:1em;
+    color:#333;
+    font-family:serif;
+    border-radius:7px;
+}
+#the_message {
+    margin-bottom:2em;
+    color:#421;
+    opacity:0.7;
+    font-size:1.2em;
+    border-top: solid 1px #a7a099;
+    padding-top:1em;
+}
+#buttons {
+    clear:both;
+    margin-top:2em;
+    font-size:1.5em;
+    text-align:center;
+}
+h1 {
+	font: 90% Lucida Grande, Comic Sans MS;
+   font-size:32px;
+   color: blue;
+}
+h2 {
+   font: 90% Lucida Grande, Comic Sans MS;
+   font-size: 18px;
+   color: #336666;
+}
+h3 {
+   font-size: 16px;
+}
+h4 {
+   font-size: 14px;
+}
+label
+{
+width: 4em;
+float: left;
+text-align: right;
+margin-right: 0.5em;
+display: block
+}
+
+.submit input
+{
+margin-left: 4.5em;
+}
+input
+{
+   border-radius: 5px;
+   background-color:#F0F6FA;
+   color:black;
+}
+textarea
+{
+   border-radius: 5px;
+   background-color:#F0F6FA;
+   color:black;
+}
+input[type=submit]
+{
+   border-radius: 5px;
+   background-color:#543;
+   color:white;
+}
+fieldset
+{
+border: 1px solid #781351;
+width: 20em
+}
+
+legend
+{
+color: #fff;
+background: #ffa20c;
+border: 1px solid #781351;
+padding: 2px 6px
+}

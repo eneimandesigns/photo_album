@@ -1,0 +1,29 @@
+<h1>Eugene's Photo Album</h1>
+
+<table class="entries">
+  <tr>
+    <th>Title</th>
+    <th></th>
+    <th>Directory</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @albums.each do |album| %>
+  <tr>
+    <td class="entries"><%= album.title %></td>
+    <td class="entries"><div class='thumbnail'><a href='/albums/show?id=<%= album.id.to_s %>'><img class='icons' src='<%= "images/" + album.directory + "/" + album.cover_image  %>' /></a></div></td>
+    <td class="entries"><%= album.directory %></td>
+    <td class="oblique"><%= utc_time = Time.parse(album.created_at.to_s).utc; utc_time.localtime; date = DateTime.parse(utc_time.localtime.to_s); date.strftime('%a %b %d %H:%M:%S') %></td>
+    <td><%= link_to 'Show', album %></td>
+    <td><%= link_to 'Edit', edit_album_path(album) %></td>
+    <td><%= link_to 'Destroy', album, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Album', new_album_path %>
